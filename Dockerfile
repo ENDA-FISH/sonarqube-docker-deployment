@@ -61,6 +61,7 @@ WORKDIR ${SONARQUBE_HOME}
 EXPOSE 9000
 
 USER sonarqube
+
 STOPSIGNAL SIGINT
 
 ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
